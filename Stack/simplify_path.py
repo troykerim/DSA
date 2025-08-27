@@ -42,3 +42,7 @@ def simplifyPath(path):
     return "/" + "/".join(stack)  # Now stack = /abc/def 
 
 # Test cases here: 
+path = "/a//b/../...///c/./d/"
+
+result = simplifyPath(path)
+print(result)
