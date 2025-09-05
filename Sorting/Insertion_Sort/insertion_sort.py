@@ -16,7 +16,8 @@ def insertionSort(array):
         
         # Inner loop
         # Compare key with each element on the left of it until an element smaller than it is found
-        # For descending order, change key<array[j] to key>array[j].        
+        # For descending order, change key<array[j] to key>array[j].      
+        # keep shifting elements to the right until we find the correct spot for key.  
         while j >= 0 and key < array[j]:
             array[j + 1] = array[j]
             j = j - 1
