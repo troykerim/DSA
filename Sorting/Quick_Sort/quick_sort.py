@@ -19,7 +19,7 @@ def partition(arr, low, high):
     i = low - 1
 
     # Iterate through the array from low to high - 1
-    for j in range(low, high
+    for j in range(low, high):
         # If the current element is less than or equal to the pivot
         if arr[j] <= pivot:
             # increment the point and swap the value at arr[i] with arr[j]
