@@ -14,6 +14,9 @@ You call a pre-defined API int guess(int num), which returns three possible resu
 Return the number that I picked.
 
 '''
+def guess():
+    # Was a function abstracted away in the website and was not required to be implemented!
+    pass 
 def guessNumber(n):
     l, r = 1, n
     
@@ -25,4 +28,5 @@ def guessNumber(n):
         elif result < 0:
             r = m - 1
         else:
-            retrun m
+            return m
+
