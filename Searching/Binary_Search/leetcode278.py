@@ -14,3 +14,12 @@ def firstBadVersion(n):
         else:
             L = M + 1
     return L  
+
+
+'''
+    Brute Force Version
+def firstBadVersion(n):
+    for x in range(1, n+1):
+        if isBadVersion(x):
+            return x
+'''
