@@ -17,3 +17,18 @@ class Solution:
             
         inOrder(root)
         return res
+
+# Iterative Solution
+class Solution:
+    def inorderTraversal(self, root):
+        res = [] 
+        stack = []
+        cur = root 
+        while cur or stack:
+            while cur:
+                stack.append(cur)
+                cur = cur.left
+            cur = stack.pop()
+            res.append(cur)
+            cur = cur.right 
+        return res
