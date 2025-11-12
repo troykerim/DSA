@@ -5,11 +5,11 @@
     and inorder is the inorder traversal of the same tree, construct and return the binary tree.
 '''
 
-# class TreeNode:
-#     def __init__(self, val = 0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
+class TreeNode:
+    def __init__(self, val = 0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
         
 class Solution:
     def buildTree(self, preorder, inorder):
